@@ -5,12 +5,11 @@
   "type": "module",
   "scripts": {
     "predeploy": "npm run build",
-  "deploy": "gh-pages -d dist",
+    "deploy": "gh-pages -d dist -b gh-pages -r https://github.com/Alexander-Prado/datosmaccelular.github.io.git",
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview"
-    
   },
   "dependencies": {
     "@supabase/supabase-js": "^2.76.1",
